@@ -8,16 +8,10 @@
 
 int print_char(va_list arg)
 {
-	char c;
-	int count = 0, ret_value;
+	unsigned char c;
 
 	c = va_arg(arg, int);
 
-	ret_value = _putchar(c);
-
-	if (ret_value == -1)
-		return (-1);
-
-	count++;
-	return (count);
+	_putchar(c);
+	return (1);
 }

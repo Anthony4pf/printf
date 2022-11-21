@@ -2,18 +2,16 @@
 #include <string.h>
 
 /**
-*find_function - find the associated function
-*@s: symbol
-*Return: pointer to the function
+*find_function - find the associated function for the format specified
+*@s: symbol for the format
+*Return: NULL or associated function
 */
 
-int (*find_function(const char *s))(va_list)
+int (*find_function(const char *format))(va_list)
 {
 	sym_t sps[] = {
 			{"c", print_char},
 			{"s", print_string},
-			/*{"i", print_int},*/
-			/*{"d", print_dec},*/
 			{NULL, NULL}
 		};
 
@@ -21,7 +19,7 @@ int (*find_function(const char *s))(va_list)
 
 	while (sps[i].sym)
 	{
-		if (strcmp(sps[i].sym, s) == 0)
+		if (sps[i].sym[0] == (*format))
 		{
 			return (sps[i].f);
 		}
