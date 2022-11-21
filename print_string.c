@@ -9,9 +9,12 @@
 int print_string(va_list arg)
 {
         char *str;
-        unsigned int i;
+        int i;
 
         str = va_arg(arg, char *);
+
+	if (str == NULL)
+		str = "(null)";
 
         for (i = 0; str[i]; i++)
         {

@@ -17,7 +17,7 @@ int (*find_function(const char *s))(va_list)
 			{NULL, NULL}
 		};
 
-	int i = 0;
+	unsigned int i = 0;
 
 	while (sps[i].sym)
 	{

@@ -8,9 +8,16 @@
 
 int print_char(va_list arg)
 {
-	int c;
+	char c;
+	int count = 0, ret_value;
 
 	c = va_arg(arg, int);
 
-	return (write(1, &c, 1));
+	ret_value = _putchar(c);
+
+	if (ret_value == -1)
+		return (-1);
+
+	count++;
+	return (count);
 }
