@@ -11,7 +11,7 @@ int (*find_function(const char *s))(va_list)
 {
 	sym_t sps[] = {
 			{"c", print_char},
-			/*{"s", print_string},*/
+			{"s", print_string},
 			/*{"i", print_int},*/
 			/*{"d", print_dec},*/
 			{NULL, NULL}
@@ -25,6 +25,7 @@ int (*find_function(const char *s))(va_list)
 		{
 			return (sps[i].f);
 		}
+
 		i++;
 	}
 

@@ -17,6 +17,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(ap, format);
+
 	while (format[i])
 	{
 		while (format[i] != '%' && format[i])
@@ -27,6 +28,7 @@ int _printf(const char *format, ...)
 		}
 		if (format[i] == '\0')
 			return (count);
+
 		f = find_function(&format[i + 1]);
 		if (f != NULL)
 		{
@@ -36,6 +38,7 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i + 1])
 			return (-1);
+
 		_putchar(format[i]);
 		count++;
 		if (format[i + 1] == '%')
@@ -43,6 +46,7 @@ int _printf(const char *format, ...)
 		else
 			i++;
 	}
+
 	va_end(ap);
 	return (count);
 }

@@ -22,5 +22,6 @@ int _printf(const char *format, ...);
 int (*find_function(const char *))(va_list);
 int _putchar(char);
 int print_char(va_list);
+int print_string(va_list);
 
 #endif
