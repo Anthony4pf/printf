@@ -8,15 +8,15 @@
 
 int print_string(va_list arg)
 {
-	char *str;
-	unsigned int i;
+        char *str;
+        unsigned int i;
 
-	str = va_arg(arg, char *);
+        str = va_arg(arg, char *);
 
-	for (i = 0; str[i]; i++)
-	{
-		_putchar(str[i]);
-	}
+        for (i = 0; str[i]; i++)
+        {
+                _putchar(str[i]);
+        }
 
-	return (i);
+        return (i);
 }
