@@ -3,7 +3,7 @@
 
 /**
 *find_function - find the associated function for the format specified
-*@s: symbol for the format
+*@format: symbol for the format specifier
 *Return: NULL or associated function
 */
 
