@@ -32,7 +32,6 @@ int print_integer(va_list arg)
 		for (i = 1; i <= len; i++)
 		{
 			digit = n / power;
-			_putchar('0' + digit);
 			if (n < 0)
 				_putchar((digit * -1) + '0');
 			else
