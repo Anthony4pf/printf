@@ -26,8 +26,6 @@ int print_dec(va_list arg)
 
 int print_number(int num)
 {
-	int q = num;
-
 	static int count = 1;
 
 	if (num < 0)
