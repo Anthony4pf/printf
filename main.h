@@ -23,6 +23,6 @@ int (*find_function(const char *))(va_list);
 int _putchar(char);
 int print_char(va_list);
 int print_string(va_list);
-int print_dec(va_list);
-int print_number(int);
+int print_binary(va_list);
+
 #endif
