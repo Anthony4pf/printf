@@ -12,6 +12,8 @@ int (*find_function(const char *format))(va_list)
 	sym_t sps[] = {
 			{"c", print_char},
 			{"s", print_string},
+			{"d", print_dec},
+			{"i", print_dec},
 			{NULL, NULL}
 		};
 
