@@ -13,8 +13,8 @@ int (*find_function(const char *format))(va_list)
 			{"c", print_char},
 			{"s", print_string},
 			{"b", print_binary},
-			/*{"d", print_dec},*/
-			/*{"i", print_dec},*/
+			{"d", print_integer},
+			{"i", print_integer},
 			{NULL, NULL}
 		};
 

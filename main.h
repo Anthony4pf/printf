@@ -24,5 +24,6 @@ int _putchar(char);
 int print_char(va_list);
 int print_string(va_list);
 int print_binary(va_list);
+int print_integer(va_list);
 
 #endif
