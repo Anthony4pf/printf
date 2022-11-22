@@ -12,7 +12,6 @@ int print_integer(va_list arg)
 	int count = 0;
 
 	n = va_arg(arg, int);
-
 	if (n != 0)
 	{
 		if (n < 0)
@@ -21,7 +20,6 @@ int print_integer(va_list arg)
 			n = -n;
 			count++;
 		}
-
 		num = n;
 		len = 0;
 		while (num != 0)
@@ -29,12 +27,9 @@ int print_integer(va_list arg)
 			num = num / 10;
 			len++;
 		}
-
 		power = 1;
-
 		for (i = 1; i <= len - 1; i++)
 			power = power * 10;
-
 		for (i = 1; i <= len; i++)
 		{
 			digit = n / power;
@@ -49,6 +44,5 @@ int print_integer(va_list arg)
 		_putchar('0');
 		return (1);
 	}
-
 	return (count);
 }
