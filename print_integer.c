@@ -19,6 +19,7 @@ int print_integer(va_list arg)
 		{
 			_putchar('-');
 			n = -n;
+			count++;
 		}
 
 		num = n;
@@ -39,7 +40,7 @@ int print_integer(va_list arg)
 			digit = n / power;
 			_putchar('0' + digit);
 			count++;
-			n = n - digit * power;
+			n -=  digit * power;
 			power = power / 10;
 		}
 	}
