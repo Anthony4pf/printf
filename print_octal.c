@@ -32,7 +32,7 @@ int print_octal(va_list arg)
 	for (i = 1; i <= len; i++)
 	{
 		digit = n / power;
-		putchar('0' + digit);
+		_putchar('0' + digit);
 		count++;
 		n = n - power * digit;
 		power = power / 8;
@@ -40,7 +40,7 @@ int print_octal(va_list arg)
 	}
 	else
 	{
-		putchar('0');
+		_putchar('0');
 		return (1);
 	}
 	return (count);
