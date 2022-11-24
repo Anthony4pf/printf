@@ -30,5 +30,7 @@ int print_unsigned(va_list);
 int print_X(va_list);
 int print_x(va_list);
 int print_hex(unsigned int, unsigned int);
+int print_ascii(va_list arg);
+int print_rev(va_list arg);
 
 #endif
