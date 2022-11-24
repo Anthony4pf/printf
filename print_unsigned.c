@@ -28,7 +28,7 @@ int print_unsigned(va_list arg)
 
 		for (i = 1; i <= len - 1; i++)
 			power *= 10;
-		
+
 		for (i = 1; i <= len; i++)
 		{
 			digit = n / power;
@@ -41,8 +41,7 @@ int print_unsigned(va_list arg)
 	else
 	{
 		_putchar('0');
-		count++;
-		return (count);
+		return (1);
 	}
 
 	return (count);
