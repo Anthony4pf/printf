@@ -8,10 +8,13 @@
 
 int print_rev(va_list arg)
 {
-	int i, j,len = 0;
+	int i, j, len = 0;
 	char *str;
 
 	str = va_arg(arg, char *);
+
+	if (str == NULL)
+		str = ")llun(";
 
 	for (i = 0; str[i] != '\0'; i++)
 	;
