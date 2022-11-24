@@ -8,8 +8,8 @@
 
 int print_rev(va_list arg)
 {
-	int i, j, len = 0;
 	char *str;
+	int i, len = 0;
 
 	str = va_arg(arg, char *);
 
@@ -19,9 +19,9 @@ int print_rev(va_list arg)
 	for (i = 0; str[i] != '\0'; i++)
 	;
 
-	for (j = i; j >= 0; j--)
+	for (i -= i; i >= 0; i--)
 	{
-		_putchar(str[j]);
+		_putchar(str[i]);
 		len++;
 	}
 
