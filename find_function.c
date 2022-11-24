@@ -15,6 +15,10 @@ int (*find_function(const char *format))(va_list)
 			{"b", print_binary},
 			{"d", print_integer},
 			{"i", print_integer},
+			{"u", print_unsigned},
+			{"o", print_octal},
+			{"x", print_x},
+			{"X", print_X},
 			{NULL, NULL}
 		};
 
